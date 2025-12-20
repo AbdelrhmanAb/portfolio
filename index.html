@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Playfair+Display:wght@400..900&display=swap"
+    rel="stylesheet">
+
+  <!--   
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script> -->
+
+
+
+  <title>Dev</title>
+</head>
+
+<body>
+  <div class=" flex overflow-hidden   ">
+
+
+
+    <!-- <header id="header" class="header  hidden-header  navaside  bg-black "> -->
+    <header id="header" class="navaside fixed top-0 left-0 h-screen w-64 bg-black
+         transform -translate-x-full transition-transform duration-300
+         xl:translate-x-0">
+
+
+
+      <div class="info">
+        <div class="personalimg visible">
+          <img src="images/personalimg.jpeg" class="" alt="">
+
+        </div>
+        <h3 class=" capitalize  ">abdo ahmed</h3>
+        <div class="icons flex justify-evenly  w-full">
+          <a href=""> <i
+              class="fa-brands fa-x-twitter bg-slate-800 rounded-full flex justify-center items-center text-white"></i></a>
+          <a href=""> <i
+              class="fa-brands fa-facebook bg-slate-800 rounded-full flex justify-center items-center text-white"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bwsbssnnbdddn@gmail.com&su=Contact%20Us"
+            target="_blank" rel="noopener noreferrer" aria-label="Send Email via Gmail">
+            <i
+              class="fa-regular fa-message bg-slate-800 rounded-full flex justify-center items-center text-white w-10 h-10"></i>
+          </a>
+          <a rel="noopener noreferrer" href="https://wa.me/201026431290"> <i
+              class="fa-brands fa-whatsapp bg-slate-800 rounded-full flex justify-center items-center text-white"></i></a>
+          <a href=""> <i
+              class="fa-brands fa-linkedin bg-slate-800 rounded-full flex justify-center items-center text-white"></i></a>
+        </div>
+      </div>
+
+
+      <nav>
+        <ul class="navmenu  pl-2 flex list-none flex-col items-start text-zinc-400 gap-6 text-xl">
+          <li><a href="#Home" class="text-white "><i class="fa-solid fa-house navicon mr-2"></i>Home</a></li>
+          <li><a href="#About"><i class="fa-solid fa-circle-user navicon mr-2"></i> About</a></li>
+          <li><a href="#Skills"><i class="fa-solid fa-wand-magic-sparkles navicon mr-2"></i> Skills</a></li>
+          <li><a href="#Resume"><i class="fa-solid fa-sheet-plastic navicon mr-2"></i> Resume</a></li>
+          <li><a href="#Portfolio"><i class="fa-solid fa-images navicon mr-2"></i> Portfolio</a></li>
+          <li><a href="#Services"><i class="fa-solid fa-server navicon mr-2"></i> Services</a></li>
+          <li><a href="#Contact"><i class="fa-solid fa-envelope navicon mr-2"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="main flx lex-col item-center">
+
+      <i id="header-tog" class="fa-solid fa-list-ul header-tog flex items-center justify-center"></i>
+
+      <section id="Home" class="hero  ">
+
+        <img src="images/PIM.jpeg" alt="">
+        <div class="hero-text ">
+          <h2>Abdelrahman Ahmad</h2>
+          <p translate="no">Iam <span id="typing"></span>
+            <span class="cursor"></span>
+          </p>
+        </div>
+
+      </section>
+
+      <!--//////////////////////////// ABOUT ///////////////////////////// -->
+      <section id="About" class=" section globalsitting about">
+        <h4>About</h4>
+        <hr class="bg-sky-500 h-1 rounded-full w-14  ">
+        <p>I am a passionate Frontend Developer who enjoys building modern, responsive, and user-friendly web
+          interfaces.
+          I love turning ideas and designs into real, interactive websites using HTML, CSS, JavaScript, Tailwind CSS,
+          and React.
+          I focus on writing clean, scalable code and always aim to deliver a smooth and engaging user experience.
+          I am constantly learning new technologies and improving my skills to grow as a web developer.</p>
+
+        <div class="about-info flex flex-col md:flex-row  shadow-sm  shadow-slate-200   ">
+          <div>
+            <img class="about-img rounded-tl-3xl " loading="lazy" src="images/About.jpeg" alt="">
+          </div>
+          <div class="about-text p-3">
+            <h5>UI/UX Designer & Web Developer.</h5>
+            <p>I design intuitive and user-centered interfaces, then bring them to life through clean and efficient web
+              development.
+              My focus is on creating seamless digital experiences that balance aesthetics, usability, and performance
+            </p>
+            <div class="w-full bg-white grid grid-cols-1 md:grid-cols-2 gap-y-4  ">
+
+              <!-- العمود الأول -->
+              <div class="about-text-first-clild">
+                <ul class="flex flex-col gap-3">
+                  <li><i class="fa-solid fa-chevron-right"></i> <strong>Birthday:</strong> <span>21 Aug 2008</span></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span>
+                  </li>
+                  <li><i class="fa-solid fa-chevron-right"></i> <strong>Phone:</strong> <a
+                      href="https://wa.me/201026431290" target="_blank" rel="noopener noreferrer"><span
+                        class=" hover:text-blue-500 underline">+20 1026431290</span></a></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                </ul>
+              </div>
+
+
+              <!-- العمود الثاني -->
+              <div class="about-text-last-clild">
+                <ul class="flex flex-col gap-3">
+                  <li><i class="fa-solid fa-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span>
+                  </li>
+                  <li><i class="fa-solid  fa-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+
+            </div>
+            <p class="">I design intuitive and user-centered interfaces, then bring them to life
+              through clean
+              and efficient web
+              development.
+              My focus is on creating seamless digital experiences that balance aesthetics, usability, and performance
+            </p>
+
+          </div>
+        </div>
+        <div class="pl-2.5">
+          <div>
+            <div class="bg-gradient-to-tr from-sky-700 to-sky-500">
+              <ul class="FAbout md:rounded-bl-3xl 
+      grid grid-cols-1  md:grid-cols-4 sm:grid-cols-2 items-cente justify-evenly list-none">
+
+                <!-- item -->
+                <li class="flex flex-col justify-center text-center">
+                  <p class="text-6xl">
+                    <i class="fa-regular fa-face-smile mx-3"></i>
+                    <span class="purecounter" data-purecounter-start="305" data-purecounter-end="320"
+                      data-purecounter-duration="2">
+                    </span>
+                  </p>
+                  <span><strong>Happy Clients</strong> consequuntur quae</span>
+                </li>
+
+                <!-- item -->
+                <li class="flex flex-col justify-center text-center">
+                  <p class="text-6xl">
+                    <i class="fa-regular fa-face-smile mx-3"></i>
+                    <span class="purecounter" data-purecounter-start="515" data-purecounter-end="530"
+                      data-purecounter-duration="2">
+                    </span>
+                  </p>
+                  <span><strong>Happy Clients</strong> consequuntur quae</span>
+                </li>
+
+
+                <!-- item -->
+                <li class="flex flex-col justify-center text-center">
+                  <p class="text-6xl">
+                    <i class="fa-regular fa-face-smile mx-3"></i>
+                    <span class="purecounter" data-purecounter-start="240" data-purecounter-end="255"
+                      data-purecounter-duration="2">
+                    </span>
+                  </p>
+                  <span><strong>Happy Clients</strong> consequuntur quae</span>
+                </li>
+
+
+                <!-- item -->
+                <li class="flex flex-col justify-center text-center">
+                  <p class="text-6xl">
+                    <i class="fa-regular fa-face-smile mx-3"></i>
+                    <span class="purecounter" data-purecounter-start="200" data-purecounter-end="220"
+                      data-purecounter-duration="2">
+                    </span>
+                  </p>
+                  <span><strong>Happy Clients</strong> consequuntur quae</span>
+                </li>
+              </ul>
+            </div>
+
+
+
+      </section>
+      <!--//////////////////////////// ABOUT ///////////////////////////// -->
+
+
+      <!--//////////////////////////// SKILLS ///////////////////////////// -->
+      <section id="Skills">
+        <div class="skills globalsitting rounded-b-3xl rounded-tr-3xl section  ">
+          <h4>Skills</h4>
+          <hr class="bg-sky-500 h-1 rounded-full w-14  ">
+          <p class="lg:mt-2 md:mt-8 ">I design intuitive and user-centered interfaces, then bring them to life
+            through clean
+            and efficient web
+            development.
+            My focus is on creating seamless digital experiences that balance aesthetics, usability, and performance
+          </p>
+          <div class="prog-list flex flex-col lg:flex-row gap-1   rounded-b-3xl    ">
+
+            <div class="">
+              <div class=" text-2xl flex flex-col">
+                <p>HTML</p>
+                <p><span id="progress1"></span>95%</p>
+              </div>
+              <div class=" text-2xl flex flex-col">
+                <p>CSS</p>
+                <p><span id="progress2"></span>90%</p>
+              </div>
+              <div class=" text-2xl flex flex-col">
+                <p>JS</p>
+                <p><span id="progress3"></span>85%</p>
+              </div>
+            </div>
+
+
+            <div>
+              <div class=" text-2xl flex flex-col">
+                <p>Tialwind</p>
+                <p><span id="progress4"></span>90%</p>
+              </div>
+              <div class=" text-2xl flex flex-col">
+                <p> Bootstrap</p>
+                <p><span id="progress5"></span>85%</p>
+              </div>
+              <div class=" text-2xl flex flex-col">
+                <p>React</p>
+                <p><span id="progress6"></span>80%</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!--//////////////////////////// SKILLS ///////////////////////////// -->
+
+
+
+
+      <!--//////////////////////////// RESUME ///////////////////////////// -->
+      <section id="Resume">
+        <div class="section globalsitting resume" rounded-b-3xl rounded-tr-3xl section>
+          <h4>Resume</h4>
+          <hr class="bg-sky-500 h-1 rounded-full w-14  ">
+          <p class="lg:mt-2 md:mt-8 md:w-3/4 ">
+            I design intuitive and user-centered interfaces, then bring them to life
+            I design intuitive and user-centered interfaces, then bring them to life
+            I design intuitive and user-centered interfaces, then bring them to life
+            through clean
+            and efficient web
+            development.
+          </p>
+          <div class=" flex md:flex-row justify-start flex-col">
+
+            <div class="resume-list resume-list-1 ">
+              <div class="globalsitting  resume-item">
+                <h4>Sumary</h4>
+
+                <div class=" p-2 flex flex-col gap-y-3">
+                  <h5 class=" text-2xl text-slate-400 font-bold   ">
+                    Brandon Johnson
+                  </h5>
+                  <div class="flex flex-col pl-3 gap-y-3 ">
+                    <p>
+                      Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
+                      developing
+                      user-centered digital/print marketing material from initial concept to final, polished
+                      deliverable.
+                    </p>
+                    <ul class="ml-5 list-disc">
+                      <li>Portland par 127,Orlando, FL</li>
+                      <li>(123) 456-7891</li>
+                      <li>alice.barkley@example.com</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="globalsitting  resume-item">
+                <h4>Education</h4>
+
+                <div class=" leading-8    p-2 flex flex-col gap-y-4">
+                  <h5 class=" text-2xl text-slate-400 font-bold   ">
+                    Master of Fine Arts & Graphic Design
+                  </h5>
+                  <div class="flex flex-col pl-3 gap-y-4 ">
+                    <div class=" flex gap-2">
+                      <p>2024 </p>
+                      -
+                      <p>2025</p>
+                    </div>
+                    <p>
+                      Rochester Institute of Technology, Rochester, NY
+
+                      Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero
+                      voluptatum
+                      qui ut dignissimos deleniti nerada porti sand markend</p>
+
+                  </div>
+                </div>
+                <div class=" leading-7 p-2 flex flex-col gap-y-3">
+                  <h5 class=" text-2xl text-slate-400 font-bold   ">
+                    Bachelor of Fine Arts & Graphic Design </h5>
+                  <div class="flex flex-col pl-3 gap-y-3 ">
+                    <div class=" flex gap-2">
+                      <p>2024 </p>
+                      -
+                      <p>2025</p>
+                    </div>
+                    <p>
+                      Rochester Institute of Technology, Rochester, NY
+
+                      Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero
+                      voluptatum
+                      qui ut dignissimos deleniti nerada porti sand markend</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="resume-list resume-list-2">
+              <div class="globalsitting  resume-item">
+                <h4>Professional Experience</h4>
+
+                <div class=" p-2 flex flex-col gap-y-3">
+                  <h5 class=" text-2xl text-slate-400 font-bold   ">
+                    Senior graphic design specialis </h5>
+                  <div class="flex flex-col pl-3 gap-y-3 ">
+                    <div class=" flex gap-2">
+                      <p>2024 </p>
+                      -
+                      <p>2025</p>
+                    </div>
+                    <p> Experion, New York, NY </p>
+                    <ul class="ml-5  list-disc">
+                      <li class="mt-2">Lead in the design, development, and implementation of the graphic, layout, and
+                        production
+                        communication materials</li>
+                      <li class="mt-2">Delegate tasks to the 7 members of the design team and provide counsel on all
+                        aspects
+                        of the project</li>
+                      <li class="mt-2">Supervise the assessment of all graphic materials in order to ensure quality and
+                        accuracy of the design</li>
+                      <li class="mt-2">Oversee the efficient use of production project budgets ranging from $.02 - $0.25
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="globalsitting  resume-item">
+
+                <div class=" p-2 flex flex-col gap-y-3">
+                  <h5 class=" text-2xl text-slate-400 font-bold   ">
+                    Graphic design specialist </h5>
+                  <div class="flex flex-col pl-3 gap-y-3 ">
+                    <div class=" flex gap-2">
+                      <p>2024 </p>
+                      -
+                      <p>2025</p>
+                    </div>
+                    <p> 2017 - 2018
+                      Stepping Stone Advertising, New York, NY </p>
+                    <ul class="ml-5  list-disc">
+                      <li class="mt-2">Lead in the design, development, and implementation of the graphic, layout, and
+                        production
+                        communication materials</li>
+                      <li class="mt-2">Delegate tasks to the 7 members of the design team and provide counsel on all
+                        aspects
+                        of the project</li>
+                      <li class="mt-2">Supervise the assessment of all graphic materials in order to ensure quality and
+                        accuracy of the design</li>
+                      <li class="mt-2">Oversee the efficient use of production project budgets ranging from $.02 - $0.25
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--//////////////////////////// RESUME ///////////////////////////// -->
+
+
+
+
+      <!--//////////////////////////// PORTFOLIO ///////////////////////////// -->
+      <section class="sec-portfolio">
+        <div id="Portfolio" class=" portfolio section globalsitting">
+          <h4>Portfolio</h4>
+          <hr class="bg-sky-500 h-1 rounded-full w-14  ">
+          <p class="lg:mt-2 md:mt-8 w-2/3">I design intuitive and user-centered interfaces, then bring them to life
+            through clean
+            and efficient web
+            development.
+            My focus is on creating seamless digital experiences that balance aesthetics, usability, and performance
+          </p>
+          <div class=" mt-24 bg-sky-50 w-full flex flex-col ">
+            <!-- Filters -->
+            <div class="btn-filter-list w-full md:pl-96     md:gap-4 gap-0 mb-8    ">
+              <div class="pl-10">
+                <button data-filter="*" class="filter-btn md:px-4 md:py-2 px-2 py-1 bg-black text-white rounded">
+                  All
+                </button>
+                <button data-filter=".app" class="filter-btn md:px-4 md:py-2 px-2 py-1 bg-gray-200 rounded">
+                  App
+                </button>
+                <button data-filter=".product" class="filter-btn md:px-4 md:py-2 px-2 py-1 bg-gray-200 rounded">
+                  Products
+                </button>
+                <button data-filter=".branding" class="filter-btn md:px-4 md:py-2 px-2 py-1 bg-gray-200 rounded">
+                  Branding
+                </button>
+                <button data-filter=".books" class="filter-btn md:px-4 md:py-2 px-2 py-1 bg-gray-200 rounded">
+                  Books
+                </button>
+              </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid-container    ">
+              <!-- /////// item /////// -->
+              <div class="item   app rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/app-1.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">App-1</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+
+              <!-- /////// item /////// -->
+              <div class="item   app rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/app-2.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">App-2</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+              <!-- /////// item /////// -->
+              <div class="item   app rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/app-3.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">App-3</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+              <!-- /////// item /////// -->
+              <div class="item   product rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/product-1.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">product-1</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+              <!-- /////// item /////// -->
+              <div class="item   product rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/product-2.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">product-2</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+              <!-- /////// item /////// -->
+              <div class="item   product rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/product-3.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">product-3</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+              <!-- /////// item /////// -->
+              <div class="item   branding rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/branding-1.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">branding-1</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+              <!-- /////// item /////// -->
+              <div class="item   branding rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/branding-2.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">branding-2</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+              <!-- /////// item /////// -->
+              <div class="item   branding rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/branding-3.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">branding-3</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+
+
+              <!-- /////// item /////// -->
+              <div class="item   books rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/books-1.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">books-1</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+              <!-- /////// item /////// -->
+              <div class="item   books rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/books-2.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">books-2</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+              <!-- /////// item /////// -->
+              <div class="item   books rounded-md overflow-hidden   relative">
+                <img src="images/portfolio/books-3.jpg" alt="">
+                <div>
+                  <p class=" bg-green-200  flex justify-center items-center rounded-br-3xl">books-3</p>
+                  <div class="flex justify-evenly ">
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i
+                        class="fa-solid fa-magnifying-glass-plus"></i></p>
+                    <p class="  flex justify-center items-center rounded-br-3xl"><i class="fa-solid fa-link"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /////// end item /////// -->
+
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+  </div>
+
+  </div>
+  </section>
+  <!--//////////////////////////// PORTFOLIO ///////////////////////////// -->
+
+
+
+
+
+  <!--//////////////////////////// services ///////////////////////////// -->
+  <section id="Services">
+    <div class="  services globalsitting  ">
+      <h4>Services</h4>
+      <hr class="bg-sky-500 h-1 rounded-full w-14  ">
+      <p class="lg:mt-2 md:mt-8 ">I design intuitive and user-centered interfaces, then bring them to life
+        through clean
+        and efficient web
+        development.
+        My focus is on creating seamless digital experiences that balance aesthetics, usability, and performance
+      </p>
+      <div class="srv-list grid grid-cols-1 md:grid-cols-3  gap-3 ">
+        <!-- ////// SRV ITEM START  -->
+        <div class=" flex gap-3">
+          <div class="srv-icon flex justify-center items-center">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+
+
+          <div class="srv-text">
+            <h6>Magnam dolores</h6>
+            <p>quidem. Sit sint consecteturMagnam dolores commodi suscipit. Necessitatibus eius consequatuommodi
+              quidem
+              hic quas.</p>
+          </div>
+
+
+        </div>
+        <!-- ////// SRV ITEM EVD  -->
+        <!-- ////// SRV ITEM START  -->
+        <div class=" flex gap-3">
+          <div class="srv-icon flex justify-center items-center">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+
+
+          <div class="srv-text">
+            <h6>Magnam dolores</h6>
+            <p>quidem. Sit sint consecteturMagnam dolores commodi suscipit. Necessitatibus eius consequatuommodi
+              quidem
+              hic quas.</p>
+          </div>
+
+
+        </div>
+        <!-- ////// SRV ITEM EVD  -->
+
+        <!-- ////// SRV ITEM START  -->
+        <div class=" flex gap-3">
+          <div class="srv-icon flex justify-center items-center">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+
+
+          <div class="srv-text">
+            <h6>Magnam dolores</h6>
+            <p>quidem. Sit sint consecteturMagnam dolores commodi suscipit. Necessitatibus eius consequatuommodi
+              quidem
+              hic quas.</p>
+          </div>
+
+
+        </div>
+        <!-- ////// SRV ITEM EVD  -->
+
+        <!-- ////// SRV ITEM START  -->
+        <div class=" flex gap-3">
+          <div class="srv-icon flex justify-center items-center">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+
+
+          <div class="srv-text">
+            <h6>Magnam dolores</h6>
+            <p>quidem. Sit sint consecteturMagnam dolores commodi suscipit. Necessitatibus eius consequatuommodi
+              quidem
+              hic quas.</p>
+          </div>
+
+
+        </div>
+        <!-- ////// SRV ITEM EVD  -->
+
+        <!-- ////// SRV ITEM START  -->
+        <div class=" flex gap-3">
+          <div class="srv-icon flex justify-center items-center">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+
+
+          <div class="srv-text">
+            <h6>Magnam dolores</h6>
+            <p>quidem. Sit sint consecteturMagnam dolores commodi suscipit. Necessitatibus eius consequatuommodi
+              quidem
+              hic quas.</p>
+          </div>
+
+
+        </div>
+        <!-- ////// SRV ITEM EVD  -->
+
+        <!-- ////// SRV ITEM START  -->
+        <div class=" flex gap-3">
+          <div class="srv-icon flex justify-center items-center">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+
+
+          <div class="srv-text">
+            <h6>Magnam dolores</h6>
+            <p>quidem. Sit sint consecteturMagnam dolores commodi suscipit. Necessitatibus eius consequatuommodi
+              quidem
+              hic quas.</p>
+          </div>
+
+
+        </div>
+        <!-- ////// SRV ITEM EVD  -->
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--//////////////////////////// services ///////////////////////////// -->
+
+
+
+  <!--//////////////////////////// contact ///////////////////////////// -->
+  <section id="Contact">
+    <div class=" contact-sec section globalsitting">
+      <h4>Contact</h4>
+      <hr class="bg-sky-500 h-1 rounded-full w-14  ">
+      <p class="lg:mt-2 md:mt-8 ">I design intuitive and usereating seamless digital experiences that balance
+        aesthetics, usability, and performance
+      </p>
+      <div class="bg-sky-50 contact grid grid-cols-1 md:grid-cols-12 gap-3 ">
+
+
+        <div
+          class="contact-map bg-white md:col-span-5 shadow-xl flex flex-col justify-between items-center rounded-lg ">
+          <ul class="p-3 flex flex-col justify-between">
+            <li class="flex p-2 w-full gap-3">
+              <span class="flex justify-center items-center">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <div class="">
+
+                <h6 class=" text-xl font-bold ">adress</h6>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </li>
+            <li class=" p-2 w-full  action-click border-blue-500">
+              <a href="https://wa.me/201026431290" target="_blank" rel="noopener noreferrer" class="flex gap-3">
+                <span class="flex justify-center items-center">
+                  <i class="fa-solid fa-phone  "></i>
+                </span>
+                <div class="">
+
+
+                  <h6 class=" text-xl font-bold ">Call</h6>
+                  <p class=" hover:underline hover:text-blue-500">+20 1026431290</p>
+                </div>
+              </a>
+            </li>
+            <li class=" p-2 w-full  action-click border-blue-500">
+              <a href="" class="flex gap-3">
+
+                <span class="flex justify-center items-center">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <div class="">
+
+                  <h6 class=" text-xl font-bold ">email</h6>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.568551091702!2d31.235711!3d30.044420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c7c2f9e9c1%3A0x9a0c7d6a1b3f8b0!2sCairo%2C%20Egypt!5e0!3m2!1sen!2seg!4v1700000000000"
+              frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+          </div>
+        </div>
+        <!-- <div class=""> -->
+        <form
+          class="contact-form text-xl bg-white md:col-span-7 mt-4 md:mt-0 php-email-form grid grid-cols-2 gap-3 p-4 shadow-xl"
+          action="forms/contact.php" method="post">
+          <div class="">
+            <label for="nameinput">Your Name</label>
+            <input id="nameinput" type="text" name="name" data-rule="minlen:4" data-msg="enter a currect name">
+          </div>
+
+
+          <div class="">
+            <label for="email">Your Email</label>
+            <input id="email" class=" form-control" type="email" name="email" data-rule="email"
+              data-msg="اكتب بريد إلكتروني صحيح">
+          </div>
+          <div class="col-span-2">
+            <label for="email">Subject</label>
+            <input type="text" name="email" class=" col-span-2" data-rule="minlen:6" data-msg="اكتب بريد إلكتروني صحيح">
+          </div>
+
+          <div class="col-span-2">
+            <label for="body"> Body</label>
+
+            <textarea class="" id="body" name="message" data-rule="required" data-msg="الرسالة مطلوبة"></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading"></div>
+            <div class=" col-span-2" id="massege-form"></div>
+            <div class="sent-message"></div>
+          </div>
+
+          <button id="btn-form"
+            class=" bg-sky-500 p-3 rounded-3xl text-xl font-bold text-white col-span-2  hover:bg-sky-400"
+            type="button">send</button>
+        </form>
+
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
+  <!--//////////////////////////// contact ///////////////////////////// -->
+
+  <section>
+    <div class=""></div>
+  </section>
+
+  <footer id="footer" class="footer section ">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 ">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a class="text-blue-500" href="#">Abdulrahman Ahmed</a> Distributed by <a class="text-blue-500"
+          href="#">Abdo</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  </main>
+
+  <i class="fa-solid fa-arrow-up scroll-tog   flex items-center justify-center"></i>
+  <div id="preloader"></div>
+
+
+  </div>
+
+
+  <!-- JS LIBARARY LINKS -->
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+
+
+  <!-- PureCounter -->
+
+  <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+  <script>
+    new PureCounter();
+  </script>
+  <!-- JS LIBARARY LINKS -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,842 @@
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Raleway", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root {
+    --background-color: #ffffff;
+    /* Background color for the entire website, including individual sections */
+    --default-color: #272829;
+    /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #050d18;
+    /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #149ddd;
+    /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff;
+    /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff;
+    /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+    --nav-color: #a8a9b4;
+    /* The default color of the main navmenu links */
+    --nav-hover-color: #ffffff;
+    /* Applied to main navmenu links when they are hovered over or active */
+    --nav-mobile-background-color: #040b14;
+    /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #040b14;
+    /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: #a8a9b4;
+    /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #ffffff;
+    /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+      /* font-weight: 700; */
+
+    height: auto;
+}
+
+
+
+.section {
+    padding: 80px 0px;
+    margin-left: 300px;
+    /* width:auto; */
+}
+
+@media (max-width:1200px){
+ 
+.section {
+    padding: 80px 0px;
+    margin-left: 20px;
+    /* width:auto; */
+}   
+}
+
+/* ////////////////////////// HEADER /////////////////////////// */
+
+
+
+.navaside {
+    /* color: var(--default-color); */
+    /* background-color: #272727; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 15px;
+    height: 100vh;
+    width: 300px;
+    transition: all ease-in-out 0.3s;
+    overflow-y: auto;
+    z-index: 997;
+    border-right: 1px solid #272727;
+    overflow: hidden;
+}
+
+
+.header~.main {
+    /* margin-left: 300px; */
+}
+
+.info {
+    padding: 30px 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    gap: 20px;
+
+}
+
+.info .personalimg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #20324b;
+    overflow: hidden;
+}
+
+.info .personalimg img {
+    margin-top: -18px;
+    scale: 1.25;
+}
+
+.info h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.info div:last-child i {
+
+    width: 30px;
+    height: 30px;
+
+}
+
+.info div:last-child  i:hover {
+    background-color: #149ddd;
+}
+
+.scroll-tog {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(20, 158, 222, 1);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 50px 30px 0;
+    font-size: 22px;
+    border-radius: 50%;
+    /* display: none; */
+    z-index: 22;
+    visibility: hidden;
+    transition: .3s linear;
+}
+
+.scroll-tog:hover {
+    background-color: #26a9e5;
+}
+#header-tog{
+    /* display: none; */
+}
+.header-tog {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(20, 158, 222, 1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 50px 50px 0 0;
+    font-size: 22px;
+    border-radius: 50%;
+    visibility: hidden;
+    /* display: none; */
+    z-index: 22;
+    /* left: 370px; */
+
+}
+
+@media(max-width:1200px) {
+    /* .header-tog {
+        display: block;
+    } */
+
+    .header {
+        display: none;
+    }
+
+
+
+
+
+}
+
+/* ////////////////////////// HEADER /////////////////////////// */
+
+
+
+
+
+/* ////////////////////////// HERO /////////////////////////// */
+
+.hero {
+    width: 99vw;
+    height: 100vh;
+    position: relative;
+    /* background-color: #149ddd; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* z-index: 3; */
+}
+
+.hero img {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+
+
+}
+
+.hero div {
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    margin-left: 310px;
+    /* right: 0; */
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    width: 300px;
+}
+
+.hero p {
+    margin: 5px 0 0 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+.hero:before {
+    content: "";
+    background: color-mix(in srgb, var(--background-color), transparent 95%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+#typing {
+    border-bottom: #149ddd 2px solid;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2.5px;
+    height: 1em;
+    background: #f8f8f8;
+    margin-left: 5px;
+    animation: blink 1s infinite linear;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+nav ul li:hover {
+    color: #fff;
+
+}
+
+nav ul li:hover i {
+    color: #149ddd;
+}
+
+@media(max-width:1200px) {
+    .hero div {
+        margin-left: 20px;
+
+    }
+
+    .hero h2 {
+        font-size: 50px;
+    }
+
+}
+
+/* ////////////////////////// HERO /////////////////////////// */
+
+
+
+
+/* ////////////////////////// About /////////////////////////// */
+.globalsitting{
+    padding: 0px 10px;
+
+}
+
+.globalsitting h4 {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    /* border-bottom: #0f7eb1 4px solid; */
+
+}
+
+.about p {
+    font-size: 18px;
+    padding: 10px 0;
+    width: 70%;
+}
+
+.about-info {
+    width: 100%;
+    /* height: 450px; */
+}
+
+.about-info>:first-child {
+    width: 35%;
+    height: 100%;
+    padding: 15px;
+}
+
+.about-info img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-info>:last-child {
+    width: 60%;
+    height: 100%;
+    font-size: 14px;
+
+}
+
+.about-info>:last-child h5 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 0;
+
+}
+
+.about-info>:last-child p {
+
+    width: 100%;
+}
+
+
+
+.FAbout {
+    width: 100%;
+    padding: 40px 0px;
+    /* height: 200px; */
+
+
+    color: #fff;
+}
+
+.FAbout li {
+    /* width: 24%; */
+    padding: 0px 20px 0px 20px;
+
+
+}
+
+.FAbout  li>:first-child {
+    font-size: 38px;
+    width: auto;
+
+}
+
+.FAbout ul li:last-child {
+    font-size: 14px;
+    /* width: 80px; */
+
+}
+
+
+
+
+/* ////////////////////////// About /////////////////////////// */
+
+
+
+
+/* ////////////////////////// SKILLS /////////////////////////// */
+
+.skills {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('../images/ddd.jpg');    /* background-color: #040b14; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f8f8f8;
+    margin-top: 50px;
+    /* color: #1af9e7; */
+}
+
+.skills>p {
+    font-size: 18px;
+    width: 65%;
+}
+
+.prog-list {
+    width: 100%;
+    /* height: 400px; */
+    padding: 30px 10px;
+    margin-top: 25px;
+    position: relative;
+
+}
+
+
+.prog-list div {
+    width: 45%;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* background-color: #f8f8f8; */
+}
+
+.prog-list div div {
+    width: 90%;
+    margin-top: 20px;
+    /* display: flex; */
+
+}
+
+.prog-list p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* width: 600px; */
+}
+
+.prog-list p span {
+    width: 90%;
+}
+
+@media (max-width:1200px) {
+    .skills>p {
+        font-size: 18px;
+        width: 85%;
+    }
+
+    .prog-list div {
+        width: 100%;
+        /* background-color: #050d18; */
+    }
+
+}
+
+
+
+
+/* ////////////////////////// SKILLS /////////////////////////// */
+
+
+/* ////////////////////////// RESUME /////////////////////////// */
+
+.resume>div{
+    width:100% ;
+    /* backgro/und-color: #149ddd; */
+}
+.resume-list{
+width: 45%;
+}
+.resume-item div{
+    width: 100%;
+    /* padding: 20px; */
+    position: relative;
+}
+.resume-item h5{
+    margin-left: 16px;
+    position: relative;
+}
+.resume-item h5::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #149ddd;
+    border-radius: 50%;
+    
+}
+.resume-item > div > div::after{
+     content: "";
+    position: absolute;
+    left: 5px;
+    top: -15px;
+    width: 2px;
+    height: 108%;
+    background-color: #149ddd;
+}
+
+@media (max-width:1200px){
+    
+    .resume-list{
+width: 85%;
+}
+
+.resume-item{
+    width: 100%;
+}
+
+}
+
+/* ////////////////////////// RESUME /////////////////////////// */
+
+
+
+
+
+/* ////////////////////////// PORTFOLIO  /////////////////////////// */
+
+.sec-portfolio{
+    padding: 40px 0px;
+    height: auto;
+    /* background-color: #149ddd; */
+    width: 100%;
+}
+
+.portfolio{
+    /* padding: 40px 20px; */
+
+    margin-top: 40px;
+    width: 100%;
+
+}
+.btn-filter-list{
+    margin-top: 40px;
+    width: 100%;
+}
+.grid-container{
+    width: 100%;
+    /* background-color: #050d18; */
+
+}
+.grid-container > div{
+    width:27% ;
+position: relative;
+    height: 270px;
+    overflow: hidden;
+    margin: 2rem 0px 0px .8rem;
+
+}
+.grid-container > div img{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container > div > div>p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* color: #000; */
+    width: auto;
+    height: 60px;
+    font-size: 20px;
+
+}
+
+.grid-container > div > div >div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    width: 100px;
+    height: auto;
+    transform: translate(-50%);
+    font-size: 28px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+
+}
+
+.grid-container > div>div{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+height: 0px;
+    background-color: rgba(5, 13, 24,.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: .7 linear;
+    
+
+}
+
+.grid-container > div:hover >div{
+
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+/* ////////////////////////// PORTFOLIO  /////////////////////////// */
+
+
+
+
+
+
+
+/* ////////////////////////// SERVICES /////////////////////////// */
+.services{
+    margin-left: 300px;
+    height: auto;
+}
+
+.services .srv-list{
+    width: 100%;
+    padding: 50px 0px;
+    transition:color 1s ease,background-color 1s ease ;
+}
+.services .srv-list >div{
+    /* width: 32%; */
+    height: 200px;
+}
+
+.services .srv-list >div div:first-child{
+    width: 80px;
+    height: 80px;
+    font-size: 34px;
+    font-weight: 300;
+    border-radius: 50%;
+    color:#fff ;
+    background-color: #4fc7ff;
+    border: #4fc7ff 1px solid;
+} 
+
+.services .srv-list >div:hover div:first-child{
+    color: #4fc7ff;
+    background-color: #fff;
+}
+
+
+.services .srv-list >div div:last-child{
+    width: 70%;
+    padding: 8px;
+}
+
+.services .srv-list >div div:last-child h6{
+    font-size: 22px;
+}
+.services .srv-list >div:hover div:last-child h6{
+    color: #4fc7ff;
+}
+
+.services .srv-list >div div:last-child p{
+    font-size: 14px;
+}
+
+@media (max-width:1200px){
+    .services{
+        margin-left: 20px;
+    }
+
+
+}
+
+@media (max-width:770px){
+
+    .services .srv-list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+}
+
+
+}
+
+
+/* ////////////////////////// SERVICES /////////////////////////// */
+
+
+
+
+/* ////////////////////////// CONTACT /////////////////////////// */
+
+.contact{
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+    /* background-color: #92dcff; */
+    padding: 30px 10px;
+}
+
+.contact .contact-map{
+    /* width: 43%; */
+    height: 650px;
+    /* background-color: #149ddd; */
+
+}
+.contact .contact-map ul {height: 40%;width: 100%;}
+
+.contact .contact-map ul li span{
+       width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 300;
+    border-radius: 50%;
+    color:#fff ;
+    background-color: #4fc7ff;
+    border: #4fc7ff 1px solid;
+
+}
+
+.contact .contact-map ul li:hover span{
+    background-color: #fff;
+    color:#4fc7ff ;
+}
+
+.contact .contact-map .location{
+    width: 90%;
+    height: 55%;
+    
+}
+
+
+
+.contact .contact-form  {
+    /* width: 53%; */
+    height: 650px;
+
+}
+.contact .contact-form  div{
+
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-form  input{
+    height: 40px;
+}
+.contact .contact-form  textarea{
+    height: 120px;
+}
+
+
+.contact .contact-form  input,
+.contact .contact-form  textarea{
+border: 1px solid #787879;
+outline: none;
+
+
+
+}
+
+.contact .contact-form  input:focus,
+.contact .contact-form  textarea:focus{
+border: 1px solid #4fc7ff;
+scale: 1.02;
+
+}
+
+.contact .contact-form  button{
+    width: 150px;
+    height: 60px;
+
+}
+
+
+/* ////////////////////////// CONTACT /////////////////////////// */
+
+
+
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffffff;
+  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* /                   footer */
+/* /                   footer */
+/* /                   footer */
+.footer {
+  /* color: var(--default-color); */
+  /* background-color: var(--background-color); */
+  font-size: 14px;
+  padding: 40px 0;
+  position: relative;
+  /* height: 200px; */
+  border-top: 1px solid color-mix(in srgb,#149ddd, transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 4px;
+  font-size: 13px;
+  text-align: center;
+}
