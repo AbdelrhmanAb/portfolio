@@ -68,7 +68,10 @@ font-family: 'Poppins', sans-serif;
     padding: 80px 0px;
     margin-left: 20px;
     /* width:auto; */
-}   
+}  
+.main{
+    width: 100vh;
+}
 }
 
 /* ////////////////////////// HEADER /////////////////////////// */
@@ -185,10 +188,12 @@ font-family: 'Poppins', sans-serif;
 
     .header {
         display: none;
+    }}
+
+@media(max-width:450px) {
+    .section{
+        margin-left: 0px;
     }
-
-
-
 
 
 }
@@ -386,7 +391,91 @@ nav ul li:hover i {
 
 }
 
+@media (max-width:450px){
 
+
+.globalsitting h4 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    padding: 10px 0;
+    /* border-bottom: #0f7eb1 4px solid; */
+
+}
+
+.about p {
+    font-size: 12px;
+    width: 90%;
+}
+
+.about-info {
+    width: 100%;
+    /* height: 450px; */
+}
+
+.about-info>:first-child {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.about-info img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-info>:last-child {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+
+}
+
+.about-info>:last-child h5 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 0;
+
+}
+
+.about-info>:last-child p {
+
+    width: 100%;
+}
+
+
+
+.FAbout {
+    width: 100%;
+    padding: 40px 0px;
+    /* height: 200px; */
+
+
+    color: #fff;
+}
+
+.FAbout li {
+    /* width: 24%; */
+    padding: 0px 20px 0px 0px;
+
+
+}
+
+.FAbout  li>:first-child {
+    font-size: 28px;
+    width: auto;
+
+}
+
+.FAbout ul li:last-child {
+    font-size: 10px;
+    width: 30px;
+
+}
+
+
+}
 
 
 /* ////////////////////////// About /////////////////////////// */
@@ -461,6 +550,51 @@ nav ul li:hover i {
 
 }
 
+@media (max-width:450px){
+    
+.skills>p {
+    font-size: 12px;
+    width: 85%;
+}
+
+.prog-list {
+    width: 100%;
+    /* height: 400px; */
+    padding: 30px 10px;
+    margin-top: 25px;
+    position: relative;
+
+}
+
+
+.prog-list div {
+    width: 100%;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* background-color: #f8f8f8; */
+}
+
+.prog-list div div {
+    width: 92%;
+    margin-top: 20px;
+    /* display: flex; */
+
+}
+
+.prog-list p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* width: 600px; */
+}
+
+.prog-list p span {
+    width: 93%;
+}}
+
+
+
 
 
 
@@ -468,7 +602,9 @@ nav ul li:hover i {
 
 
 /* ////////////////////////// RESUME /////////////////////////// */
-
+.resume{
+    margin-top: 50px;
+}
 .resume>div{
     width:100% ;
     /* backgro/und-color: #149ddd; */
@@ -515,6 +651,25 @@ width: 85%;
 .resume-item{
     width: 100%;
 }
+
+}
+
+@media (max-width:450px){
+    
+.resume>div{
+    width:100% ;
+    /* backgro/und-color: #149ddd; */
+}
+.resume-list{
+width: 100%;
+}
+
+
+.resume-item h5::before{
+    top: 8px;
+    
+}
+
 
 }
 
@@ -608,6 +763,82 @@ height: 0px;
     visibility: visible;
 }
 
+@media (max-width:450px){
+
+
+.btn-filter-list{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.filter-btn{
+    font-size: 12px;
+}
+.grid-container{
+    width: 100%;
+    /* background-color: #050d18; */
+
+}
+.grid-container > .item{
+    width:100% ;
+position: relative;
+    height: 270px;
+    overflow: hidden;
+    margin: 2rem 0px 0px .8rem;
+
+}
+.grid-container > div img{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container > div > div>p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* color: #000; */
+    width: auto;
+    height: 60px;
+    font-size: 20px;
+
+}
+
+.grid-container > div > div >div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    width: 100px;
+    height: auto;
+    transform: translate(-50%);
+    font-size: 28px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+
+}
+
+.grid-container > div>div{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+height: 0px;
+    background-color: rgba(5, 13, 24,.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: .7 linear;
+    
+
+}
+
+.grid-container > div:hover >div{
+
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+}
 
 
 
@@ -676,7 +907,7 @@ height: 0px;
 
 }
 
-@media (max-width:770px){
+@media (max-width:770px)and(min-width:450px){
 
     .services .srv-list{
         display: grid;
