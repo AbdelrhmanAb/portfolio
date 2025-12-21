@@ -76,6 +76,11 @@ function updateHeaderTog() {
         : header_tog.classList.remove("visible");
 
 }
+function closeHeader(header, header_tog) {
+    header.classList.add("-translate-x-full");
+    header_tog.classList.remove("fa-xmark");
+    header_tog.classList.add("fa-list-ul");
+}
 
 function showBar() {
     const header_tog = document.getElementById("header-tog");
@@ -90,28 +95,31 @@ function showBar() {
         header.classList.toggle("-translate-x-full");
         header_tog.classList.toggle("fa-list-ul");
         header_tog.classList.toggle("fa-xmark");
+    
         
     
     });
+    main.addEventListener("click", () => {
+   if (!header.classList.contains("-translate-x-full")) {
+
+closeHeader(header, header_tog)}
+})
 
 
 
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
-            header.classList.add("-translate-x-full");
+            closeHeader(header, header_tog);
         }
     });
 }
 
-// تشغيل عند تحميل الصفحة
 window.addEventListener('load', showBar);
 
 
 
 
-// main.addEventListener("click", () => {
-//   header.classList.add("-translate-x-full");
-// });
+
 
 
 //////////////// scroll-btn /////////////////////
